@@ -1,7 +1,19 @@
 <template>
   <footer class="footer-section">
-    <div class="footer-top tertiary-bg">
+    <div class="footer-top pt-150 tertiary-bg">
       <div class="container">
+        <div class="row pb-100 border-bottom ">
+          <div class="col-md-2 my-auto">
+            <img src="img/redesign/ctd.png" class="img-fluid">
+          </div>
+          <div class="col-md-4 text-white align-middle my-auto">
+            <h3 class="text-white">Myōbu is safe</h3>
+            According to @ctdsec, Myōbu passed all the security tests upon audit, and is completely safe.
+          </div>
+          <div class="col-md-6 text-right my-auto">
+            <a class="btn" href="files/Cybersecurity_Audit_CTDSEC_MyobuDAOv2.pdf" target="_blank">Download</a>
+          </div>
+        </div>
         <div class="row pt-100">
           <div class="col-md-4">
             <a class="navbar-brand" href="/"
@@ -33,8 +45,20 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
+                  <a href="https://www.reddit.com/r/Myobu/" target="_blank" title="Reddit">
+                    <font-awesome-icon :icon="['fab', 'reddit']" :style="{ color: 'white' }"/>
+                  </a>
+                </li>
+                <li class="list-inline-item">
                   <a href="https://www.instagram.com/myobu_official/" target="_blank" title="Instagram">
                     <font-awesome-icon :icon="['fab', 'instagram']" :style="{ color: 'white' }"/>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.tiktok.com/@myobu_official?lang=en&is_copy_url=1&is_from_webapp=v1"
+                     target="_blank"
+                     title="TikTok">
+                    <font-awesome-icon :icon="['fab', 'tiktok']" :style="{ color: 'white' }"/>
                   </a>
                 </li>
                 <li class="list-inline-item">
@@ -45,22 +69,17 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
+                  <a href="https://www.facebook.com/Myobu-101060582216135"
+                     target="_blank"
+                     title="Facebook">
+                    <font-awesome-icon :icon="['fab', 'facebook']" :style="{ color: 'white' }"/>
+                  </a>
+                </li>
+                <li class="list-inline-item">
                   <a href="https://www.youtube.com/channel/UCkEdaRw8w0daEvGgzKff8TA/videos"
                      target="_blank"
                      title="Youtube">
                     <font-awesome-icon :icon="['fab', 'youtube']" :style="{ color: 'white' }"/>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://github.com/myobu-guardians"
-                    target="_blank"
-                    title="GitHub"
-                  >
-                    <font-awesome-icon
-                      :icon="['fab', 'github']"
-                      :style="{ color: 'white' }"
-                    />
                   </a>
                 </li>
               </ul>
@@ -72,6 +91,9 @@
                 </li>
                 <li class="list-inline-item">
                   <a class="nav-link page-scroll" href="#gamefi" v-scroll-to="'#gamefi'">GameFi</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="nav-link page-scroll" href="https://shop.myobu.io">{{ $t('shop') }}</a>
                 </li>
                 <!--                <li class="list-inline-item">-->
                 <!--                  <a class="nav-link page-scroll" href="https://app.myobu.io">{{ $t('dashboard') }}</a>-->
